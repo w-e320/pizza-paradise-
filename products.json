@@ -1,0 +1,127 @@
+[
+    {
+        "id":1,
+        "name": "Aloha Chicken",
+        "price": "RM 16.90",
+        "image":"pizza2.png"
+    },
+
+    {
+        "id":2,
+        "name": "Hawaiian Pizza",
+        "price": "RM 16.90",
+        "image":"pizza3.png"
+    },
+
+    {
+        "id":1,
+        "name": "Veggie Lover",
+        "price": "RM 16.90",
+        "image":"pizza4.png"
+    },
+
+    {
+        "id":1,
+        "name": "Chicken Delight",
+        "price": "RM 16.90",
+        "image":"pizza5.png"
+    },
+
+    {
+        "id":1,
+        "name": "Chicken Sensation",
+        "price": "RM 16.90",
+        "image":"pizza6.png"
+    },
+
+    {
+        "id":1,
+        "name": "Chicken Pepperoni",
+        "price": "RM 16.90",
+        "image":"pizza7.png"
+    },
+
+    {
+        "id":1,
+        "name": "Deluxe Cheese Pizza",
+        "price": "RM 16.90",
+        "image":"pizza8.png"
+    },
+
+    {
+        "id":1,
+        "name": "Chicken Bolognaise Spaghetti",
+        "price": "RM 16.90",
+        "image":"pasta2.png"
+    },
+
+    {
+        "id":1,
+        "name": "Asam Pedas Spaghetti",
+        "price": "RM 16.90",
+        "image":"pasta3.png"
+    },
+
+    {
+        "id":1,
+        "name": "Classic Tomato Spaghetti",
+        "price": "RM 16.90",
+        "image": "pasta4.png"
+    },
+
+    {
+        "id":1,
+        "name": "Salami Olio Spaghetti",
+        "price": "RM 16.90",
+        "image": "pasta5.png"
+    },
+
+    {
+        "id":1,
+        "name": "Chicken Pepperoni Spaghetti",
+        "price": "RM 16.90",
+        "image":"pasta6.png"
+    },
+
+    {
+        "id":1,
+        "name": "Crispy Chicken",
+        "price": "RM 16.90",
+        "image":"friedchicken2.png"
+    },
+
+    {
+        "id":1,
+        "name": "Crispy BBQ Chicken",
+        "price": "RM 16.90",
+        "image":"friedchicken3.png"
+    },
+
+    {
+        "id":1,
+        "name": "Crispy Cheezy Chicken",
+        "price": "RM 16.90",
+        "image":"friedchicken4.png"
+    },
+
+    {
+        "id":1,
+        "name": "100 Plus",
+        "price": "RM 16.90",
+        "image":"drink1.png"
+    },
+
+    {
+        "id":1,
+        "name": "Coke",
+        "price": "RM 16.90",
+        "image":"drink2.png"
+    },
+
+    {
+        "id":1,
+        "name": "Sprite",
+        "price": "RM 16.90",
+        "image":"drink3.png"
+    }
+]

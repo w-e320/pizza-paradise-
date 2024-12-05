@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.sub-heading {
+    text-align: center;
+    color: rgb(37, 151, 111);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.heading {
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+  
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: white;
+    background: rgb(25, 25, 69);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:.8rem 3rem;
+}
+  
+.btn:hover {
+    background:rgb(37, 151, 111);
+    letter-spacing: .1rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    background-color: rgb(7, 9, 26);
+    backdrop-filter: blur(100px);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    color: white;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.btnlogout-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: rgb(241, 189, 152);
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.btnlogout-popup:hover{
+    background: #fff;
+    color: black;
+}
+
+.home{
+    padding: 2rem 9%;
+}
+
+.home .swiper .swiper-slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 9rem;
+}
+
+.home .swiper .swiper-slide .content{
+    flex: 1 1 35rem;
+}
+
+.home .swiper .swiper-slide .image{
+    flex: 1 1 35rem;
+}
+
+.home .swiper .swiper-slide .image img{
+    width: 100%;
+}
+
+.home .swiper .swiper-slide span{
+    color:rgb(37, 151, 111);
+    font-size: 2.5rem;
+}
+
+.home .swiper .swiper-slide .content h3{
+    color: rgb(25, 25, 69);
+    font-size: 5rem;
+}
+
+.home .swiper .swiper-slide .content p{
+    color: black;
+    font-size: 2.2rem;
+    padding: 5rem 0;
+    line-height: 1.5;
+}
+
+.dishes .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+    margin: 20px 0 100px;
+}
+
+.dishes .box-container .box{
+    padding: 1.5rem;
+    background: rgb(255, 255, 255);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: grey;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+}
+
+.dishes .box-container .box img {
+    height: 12.5rem;
+    padding:  1rem; 
+}
+
+.dishes .box-container .box h3 {
+    color: var(--black);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.dishes .box-container .box .stars i{
+    font-size: 1rem;
+    color: #eec249;
+}
+
+.dishes .box-container .box span {
+    color: rgb(37, 151, 111);
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 1.7rem;
+}
+
+.dishes .box-container .box .btn{
+    margin: 50px 0;
+}
+
+
+.newsletter{
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-position: 20% 30%;
+    background-color: #eee;
+}
+
+.newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+}
+
+.newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #0d1168;
+}
+
+.newsletter p span{
+    font-size: 22px;
+    color: #ddaa1f;
+}
+
+.newsletter input{
+    height: 3rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+}
+
+.newsletter button{
+    background-color: black;
+    color: white;
+    white-space: nowrap;
+    padding: 8px;
+    margin: 9px;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.newsletter .form{
+    display: flex;
+    width: 55%;
+}
+
+.footer {
+    background-color: #eee;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+    background-color: #eee;
+}
+
+.footer .box-container .box h3{
+    margin-left: 5rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.footer .box-container .box a{
+    margin-left: 5rem;
+    display: block;
+    padding: 5rem, 0;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.footer .box-container .box a:hover {
+    padding-left: 2rem;
+    transition: .5s;
+}
+
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1,);
+    font-size: 1.5rem;
+    color: black;
+    padding: .5rem;
+    padding-top: 1.5rem;
+}
+
+.footer .credit span{
+    color: #0d1168;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width: 991px) {
+    header {
+        padding: 20px 50px;  
+    }
+    
+    .logo {
+        font-size: 1.5em;  
+    }
+    
+    .navigation a {
+        font-size: 1em;  
+        margin-left: 30px;
+    }
+    
+    .home .swiper .swiper-slide .content h3 {
+        font-size: 4rem;  
+    }
+    
+    .home .swiper .swiper-slide .content p {
+        font-size: 1.8rem;  
+    }
+    
+    .dishes .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); 
+    }
+    
+    .footer .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));  
+    }
+    .newsletter {
+        padding: 2rem 5%;  
+    }
+    
+    .newsletter .form {
+        width: 100%; 
+        flex-direction: column;
+    }
+    
+    .newsletter input {
+        width: 100%;  
+    }
+    
+    .footer .box-container .box h3 {
+        font-size: 0.9rem;  
+    }
+    
+    .footer .box-container .box a {
+        padding: 3rem 0;  
+    }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 20px;  
+    }
+    
+    .logo {
+        font-size: 1.2em;  
+    }
+    
+    .navigation a {
+        font-size: 0.3em;  
+        margin-left: 20px;
+    }
+    
+    .home .swiper .swiper-slide .content h3 {
+        font-size: 3.5rem;  
+    }
+    
+    .home .swiper .swiper-slide .content p {
+        font-size: 1.6rem;  
+    }
+    
+    .dishes .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));  
+    }
+    
+    .footer .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));  
+    }
+    
+    .newsletter {
+        padding: 2rem 3%;  
+    }
+    
+    .newsletter .form {
+        width: 100%;  
+    }
+    
+    .newsletter input {
+        width: 100%;  
+    }
+    
+    .footer .box-container .box h3 {
+        font-size: 0.8rem;  
+    }
+    
+    .footer .box-container .box a {
+        padding: 3rem 0;  
+    }
+}
+
+
+@media (max-width: 450px) {
+    header {
+        padding: 15px 10px;  
+    }
+    
+    .logo {
+        font-size: 1.1em;  
+    }
+    
+    .navigation a {
+        font-size: 0.8em;  
+        margin-left: 15px;
+    }
+    
+    .home .swiper .swiper-slide .content h3 {
+        font-size: 3rem;  
+    }
+    
+    .home .swiper .swiper-slide .content p {
+        font-size: 1.4rem;  
+    }
+    
+    .dishes .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));  
+    }
+    
+    .footer .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));  
+    }
+    
+    .newsletter {
+        padding: 1.5rem 2%;  
+    }
+    
+    .newsletter .form {
+        flex-direction: column;  
+    }
+    
+    .newsletter input {
+        width: 100%;  
+    }
+    
+    .footer .box-container .box h3 {
+        font-size: 0.7rem;  
+    }
+    
+    .footer .box-container .box a {
+        padding: 2rem 0;  
+    }
+}

@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+}
+
+section{
+    width: 80%;
+    padding: 25px;
+}
+
+
+
+.sub-heading {
+    text-align: center;
+    color: rgb(37, 151, 111);
+    font-size: 2rem;
+    padding-top: 7rem;
+}
+
+.heading {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3rem;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.subtitle{
+    color: beige;
+    border-bottom:3px solid beige;
+    text-align: center;
+    align-items: center;
+    font-size: 3rem;
+}
+  
+.btn {
+    margin: 20px 0;
+    display: inline-block;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+    background: rgb(25, 25, 69);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:.8rem 3rem;
+}
+  
+.btn:hover {
+    background:rgb(37, 151, 111);
+    letter-spacing: .1rem;
+}
+
+header .container{
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    margin-right: 100%;
+    padding-top: 10px;
+    color: white;
+    transition: transform .5s;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: 600;
+    color: white;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.btnlogout-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: rgb(241, 189, 152);
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.btnlogout-popup:hover{
+    background: #fff;
+    color: black;
+}
+
+.menu .category h2{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 10px;
+    color: rgb(211, 144, 97);
+    border-bottom: 5px solid rgb(211, 144, 97);
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    margin: 60px 0 100px;
+}
+
+.menu .box-container .box{
+    background: #fff;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+    box-shadow: black;
+    height: auto;
+}
+
+.menu .box-container .box:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    padding: .1rem;
+}
+
+.menu .box-container .box .image{
+    height: 20rem;
+    width: 150%;
+    padding: .7rem;
+    overflow: hidden;
+}
+
+.menu .box-container .box .img{
+    height: 200%;
+    width: 200%;
+    border-radius: 1rem;
+}
+
+.menu .box-container .box .content{
+    padding: .5rem;
+    padding-top: 0;
+}
+
+.menu .box-container .box .content .stars{
+    padding-bottom: 1rem;
+}
+
+.menu .box-container .box .content .stars i{
+    font-size: 1.6rem;
+    color: #eec249;
+}
+
+.menu .box-container .box .content h3{
+    color: rgb(25, 25, 69);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.menu .box-container .box .content p{
+    color: black;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    padding-top: 10px;
+}
+
+.menu .box-container .box .content .price{
+    color: rgb(37, 151, 111);
+    margin-left: .5rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.menu .category h2{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 10px;
+    color: rgb(211, 144, 97);
+    border-bottom: 5px solid rgb(211, 144, 97);
+}
+
+.footer {
+    background-color: #eee;
+}
+
+.footer .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+    background-color: #eee;
+}
+
+.footer .container .box h3{
+    margin-left: 5rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.footer .container .box a{
+    margin-left: 5rem;
+    display: block;
+    padding: 5rem, 0;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.footer .container .box a:hover {
+    padding-left: 2rem;
+    transition: .5s;
+}
+
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1,);
+    font-size: 1.5rem;
+    color: black;
+    padding: .5rem;
+    padding-top: 1.5rem;
+}
+
+.footer .credit span{
+    color: #0d1168;
+}
+
+
+
+
+
+
+/*media queries*/
+@media only screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    header {
+        padding: 20px 20px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .navigation a {
+        font-size: 0.9em;
+        margin-left: 10px;
+    }
+
+    .sub-heading {
+        font-size: 1.5rem;
+        padding-top: 5rem;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+    }
+
+    .menu .box-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cartTab {
+        width: 300px;
+    }
+
+    #about-head {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about-head img {
+        width: 90%;
+        height: auto;
+    }
+
+    .btn {
+        font-size: 1.1rem;
+        padding: 0.8rem 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .navigation a {
+        font-size: 0.8em;
+        margin-left: 5px;
+    }
+
+    .sub-heading {
+        font-size: 1.3rem;
+        padding-top: 4rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .menu .box-container {
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        font-size: 1.1rem;
+        padding: 0.8rem 2rem;
+    }
+
+    #about-head {
+        text-align: center;
+    }
+
+    #about-head img {
+        width: 100%;
+        height: auto;
+    }
+
+}
